@@ -1,5 +1,9 @@
 @extends('master')
 
+@section('judul')
+    BudiGIS::Markers and Polygons
+@endsection
+
 @section('isi')
     <div id="map"></div>
 @endsection
