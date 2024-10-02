@@ -10,3 +10,5 @@ Route::post('/proses-login', [LoginController::class, 'prosesLogin'])->name('pro
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
 
 Route::get('/poi', [PoiController::class, 'index'])->middleware('auth');
+Route::get('/poi/form-upload/{id}', [PoiController::class, 'form_upload']);
+Route::post('/poi/proses-upload', [PoiController::class, 'proses_upload']);

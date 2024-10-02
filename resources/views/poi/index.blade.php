@@ -112,16 +112,16 @@
                 let info_popup = (gambarnya == "foto.png" || gambarnya == "") ?
                     `<div class="card rounded-0" style="width: 15rem;">
                     <div class="card-body">
-                    <h5 class="card-title">${nama}</h5>
-                    <img src="{{ asset('/images/${gambarnya}') }}" alt="Foto" width="200" height="100"> 
+                    <h5 class="card-title">ID : ${id} - ${nama}</h5>
+                    <img src="{{ asset('/uploaded_images/foto.png') }}" alt="Foto" width="200" height="100"> 
                     <p class="card-text">${deskripsinya}</p>
-                    <a href="/poi/upload-foto/${id}" target="_blank">Add Photo</a>
+                    <a href="/poi/form-upload/${id}" target="_blank">Add Photo</a>
                     </div>
                     </div>` :
                     `<div class="card rounded-0" style="width: 15rem;">
                     <div class="card-body">
                     <h5 class="card-title">${nama}</h5>
-                    <img src="{{ asset('/images/${gambarnya}') }}" alt="Foto" width="200" height="100"> 
+                    <img src="{{ asset('/uploaded_images/${gambarnya}') }}" alt="Foto" width="200" height="100"> 
                     <p class="card-text">${deskripsinya}</p>
                     </div>
                     </div>`;
