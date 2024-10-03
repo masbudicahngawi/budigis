@@ -21,7 +21,7 @@
                     @csrf
                     <div class="col-md-2">
                         <label for="id_marker" class="form-label">ID</label>
-                        <input type="email" class="form-control rounded-0" id="id_marker" name="id_marker"
+                        <input type="text" class="form-control rounded-0" id="id_marker" name="id_marker"
                             value="{{ $data->id }}" readonly />
                     </div>
                     <br />

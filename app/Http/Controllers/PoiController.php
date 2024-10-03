@@ -31,8 +31,11 @@ class PoiController extends Controller
 
         $rekues->image->move(public_path('uploaded_images'), $nama_file_baru);
 
-        Poi::where('id', $rekues->id_marker)->update(array('image' => $nama_file_baru));
-
+        if ($rekues->deskripsi) {
+            Poi::where('id', $rekues->id_marker)->update(array('image' => $nama_file_baru, 'deskripsi' => $rekues->deskripsi));
+        } else {
+            Poi::where('id', $rekues->id_marker)->update(array('image' => $nama_file_baru));
+        }
         return back()->with('success', 'Gambar berhasil diupload.');
     }
 }
