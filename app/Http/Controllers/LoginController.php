@@ -9,7 +9,7 @@ class LoginController extends Controller
 {
     public function index()
     {
-        return view('auth.index');
+        return view('auth.index2');
     }
 
     public function prosesLogin(Request $rekues)

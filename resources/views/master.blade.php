@@ -9,11 +9,14 @@
 
     <style>
         #map {
+            margin-top: 50px;
             height: 800px;
+            z-index: 1;
         }
     </style>
-
-    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('assets/mystyles.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/nav_style.css') }}">
+    <!--<link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
     <link href="/assets/leaflet/leaflet.css" rel="stylesheet" type="text/css" />
     <link href="/assets/leaflet/leaflet.draw.css" rel="stylesheet" type="text/css" />
     <link href="/assets/leaflet_search/leaflet-search.min.css" rel="stylesheet" type="text/css" />
@@ -23,11 +26,11 @@
 </head>
 
 <body>
-
+    @include('stickynav')
     @yield('isi')
 
     <script src="/assets/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
-    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <!--<script src="/assets/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>-->
     <script src="/assets/leaflet/leaflet.js" type="text/javascript"></script>
     <script src="/assets/leaflet/leaflet.draw.js" type="text/javascript"></script>
     <script src="/assets/leaflet_search/leaflet-search.min.js" type="text/javascript"></script>
@@ -36,6 +39,7 @@
     <script src="/assets/toastr/toastr.min.js" type="text/javascript"></script>
 
     @yield('skrip')
+
 </body>
 
 </html>

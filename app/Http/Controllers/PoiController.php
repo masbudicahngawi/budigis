@@ -12,6 +12,7 @@ class PoiController extends Controller
         $all_poi = Poi::where('objek', '=', 'marker')->orWhere('objek', '=', 'polygon')->get();
 
         return view('poi.index', ['data' => $all_poi]);
+        //return view('nav.satu');
     }
 
     public function form_upload(Poi $poi, $id)

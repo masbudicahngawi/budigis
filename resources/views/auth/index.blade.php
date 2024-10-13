@@ -98,10 +98,11 @@
 
         }
     </style>
+    <!-- <link rel="stylesheet" href="{{ asset('assets/mystyles.css') }}"> -->
 </head>
 
 <body>
-    <h1>BudiGIS</h1>
+    <h1 class="text-2xl font-bold font-blue-500">BudiGIS</h1>
     <form method="post" action="{{ route('proses-login') }}">
         @csrf
         <div class="row">
