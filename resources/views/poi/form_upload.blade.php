@@ -4,7 +4,7 @@
     <div class="container">
         <div class="panel panel-primary col-md-8">
             <div class="panel-heading mt-5">
-                <h4><strong>Upload Foto</strong></h4>
+                <h4 class="text-5xl font-bold font-green"><strong>Upload Foto</strong></h4>
             </div>
             <div class="panel-body">
                 @if ($message = Session::get('success'))
